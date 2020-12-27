@@ -7,7 +7,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=prometheus
-ExecStart=/opt/prometheus/node_exporter
+ExecStart=/opt/prometheus/node_exporter/node_exporter
 
 [Install]
 WantedBy=multi-user.target
