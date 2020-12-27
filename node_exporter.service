@@ -1,0 +1,13 @@
+[Unit]
+Description=node_exporter
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=prometheus
+ExecStart=/opt/prometheus/node_exporter
+
+[Install]
+WantedBy=multi-user.target
